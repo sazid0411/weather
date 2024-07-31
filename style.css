@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    height: 100vh;
+    background:linear-gradient(#7946e6,#2f1e55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 60vh;
+    width: 45vmin;
+    background-color: #7455b5;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+.error{
+    font-size: 1rem;
+    color: white;
+}
+.hide{
+    display: none;
+}
+
+.searchdiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    
+}
+input {
+    background-color: lightgray;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: "Nunito", sans-serif;
+    width: 75%;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 2rem;
+    border: 1px solid lightgray;
+}
+
+input:focus {
+    outline: none;
+}
+
+i {
+    background-color: lightgray;
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.mainInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30VH;
+}
+
+.mainInfo h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.mainInfo p {
+    font-size: 3rem;
+    color: white;
+}
+
+.mainInfo #feel {
+    font-size: 1rem;
+}
+
+.secondaryInfo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.wind {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.humidity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+@media screen and (max-width:450px) {
+    .container {
+        height: 80vmin;
+        width: 75vmin;
+    }
+}
